@@ -11,25 +11,33 @@ font-family: "Roboto", sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    background: url(../assets/img/background.jpg) no-repeat;
+    background: rgb(235, 225, 225);
+    height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
+} 
+
+body::before{
+    content:' ' ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
-.header {
+.navbar-expand-lg {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.3rem 10%;
+    padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 5;
 }
 
-.header::before { 
+.navbar-expand-lg::before { 
     content: ' ';
     position: absolute;
     top: 0;
@@ -41,66 +49,44 @@ body {
     z-index: -1;
 }
 
-.logo { 
+.navbar-brand { 
     width: auto;
-    right: 90px;
 }
 
-.navBar a { 
+.navbar-expand-lg .navbar-brand img:hover{
+    transform: scale(1.2);
+}
+
+.navbar-expand-lg a { 
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 1.15rem;
     color: black;
     text-decoration: none;
     margin-left: 2.5rem;
+    transition: .3s;
 }
 
-.icono {
-    position: absolute;
-    font-size: 3rem;
-    color: black;
-    cursor: pointer;
-    display: none;
-    right: 10%;
+.navbar-expand-lg a:hover {
+    color: orangered;
 }
 
-@media (max-width: 992px) {
-    .header {
-        padding: 1.3rem 5%;
-    }
+.dropdown-menu {
+    content: ' ';
+    background:rgba(0, 0, 0, .1);
+    backdrop-filter: blur(3.125rem);
 }
 
-@media (max-width: 768px) {
-    .icono {
-        display: inline-flex;
-    }
-
-    .navBar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 17.7rem;
-        background: rgba(0, 0, 0, .1);
-        backdrop-filter: blur (50px);
-        box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1) ;
-    }
-    .navBar a {
-        display: block;
-        font-size: 1.2rem;
-        margin: 1.5rem 0;
-        text-align: center;
-    }
+.dropdown-menu li a:hover {
+    background: black ;
+    text-align: center;
 }
 
-.main { 
-    width: 100%;
-    height: 800px;
-}
 .container { 
     max-width: 1170px ;
     margin: auto;
 }
+
 .footer-row {
     display: flex;
     flex-wrap: wrap;
@@ -112,8 +98,20 @@ ul {
 
 .footer {
     background:rgba(0, 0, 0, .1);
-    backdrop-filter: blur(3.125rem);
+    backdrop-filter: blur(50px);
     padding: 70px 0;
+}
+
+.footer::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, .1);
+    backdrop-filter: blur(3.125rem);
+    z-index: -1;
 }
 
 .footer-info {
@@ -144,6 +142,7 @@ padding: 0 15px;
 .footer-info ul li:not(:last-child) {
     margin-bottom: 10px ;
 }
+
 .footer-info ul li a {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
@@ -151,6 +150,12 @@ padding: 0 15px;
     text-decoration: none;
     font-weight: 500;
     display: block;
+    transition: all .3s ease;
+}
+
+.footer-info ul li a:hover {
+    color: #fe842d;
+    padding-left: 6px;
 }
 
 .footer-info .redes-sociales a { 
@@ -163,12 +168,20 @@ padding: 0 15px;
     line-height: 40px;
     border-radius: 50%;
     color: black;
+    transition: all .5s ease;
+}
+
+.footer-info .redes-sociales a:hover {
+    background-color: #fe842d;
 }
 
 @media(max-width: 768px) {
     .footer-info { 
         width: 50%;
         margin-bottom: 30px;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur (50px);
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1) ;
     }
 }
 @media (max-width: 574px) {
@@ -176,3 +189,259 @@ padding: 0 15px;
         width: 100%;
     }
 }
+
+.home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(../assets/img/background.jpg);
+    background-position: center 65%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.home .contenido {
+    display: flex;
+    height: 85%;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home .contenido h1 {
+    font-family: "Grandstander", cursive;
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.home .contenido .texto {
+    margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contenido a {
+    color: #000;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #fff;
+    border: 2px solid black;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.contenido a:hover {
+    color: #fe842d;
+    background: rgba(23, 23, 23, 0.3);
+}
+
+.servicios {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url(../assets/img/background-servicios.jpg);
+    background-position: center 65%;
+    background-size:cover;
+    background-attachment: fixed;
+    margin-top: 80px;
+}
+
+.servicios::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0 0 ;
+}
+
+section h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.titulo {
+    color: white;
+    font-size: 2rem;
+}
+section p { 
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+section .tarjetas { 
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 50px;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+section .acerca-de { 
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.acerca-de .info-compania {
+    margin-top: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+.acerca-de h3 { 
+    margin: 30px 0 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.acerca-de .mision { 
+    margin-top: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+section .tarjetas .tarjeta {
+    background: #fff;
+    padding: 40px 15px;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+    width: calc(100% / 3 - 30px);
+    text-align: center;
+}
+
+
+.servicios .tarjeta img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.tarjetas .tarjeta p { 
+    font-family: "Roboto", sans-serif;
+    padding: 0 15px;
+    margin-top: 5px;
+}
+
+.tarjetas .tarjeta h3 {
+    font-family: "Roboto", sans-serif;
+    padding: 0 15px;
+}
+
+.acerca-de {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: rgb(125, 125, 125);
+    background-position: center 65%;
+    background-size:cover;
+    background-attachment: fixed;
+    margin-top: 80px;
+}
+
+.tituloNosotras {
+    color: white;
+}
+
+.acerca-de .row { 
+    padding: 0 10px;
+}
+
+.acerca-de img {
+    width: 350px;
+    height: 450px;
+    padding: 0 15px 0 0;
+    object-fit: cover;
+}
+
+.acerca-de img:hover {
+    transform: scale(1.1);
+}
+
+.clientes {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url(../assets/img/background-clientes.jpg);
+    background-position: center 65%;
+    background-size:cover;
+    background-attachment: fixed;
+    margin-top: 80px;
+}
+
+.mainContacto {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: #ffae73;
+    background-position: center 65%;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 80px;
+}
+
+.contacto form {
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.contacto form input {
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.contacto form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1.0625rem;
+    color: #fff;
+    border: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #333;
+    transition: 0.2 ease;
+}
+
+.contacto form button:hover {
+    background: orangered;
+    color: black;
+    font-weight: 600;
+}
+
