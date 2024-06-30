@@ -68,7 +68,6 @@ body::before {
   width: 100%; }
 
 .home {
-  background: url("../../assets/img/background.jpg");
   height: 100%;
   width: 100%;
   position: relative;
@@ -79,15 +78,15 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  background-image: linear-gradient(to left top, #744b4b, #8f5555, #ab5f5f, #c86969, #e57373); }
   .home::before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%;
-    z-index: -1; }
+    width: 100%; }
   .home .contenido {
     display: flex;
     height: 85%;
@@ -130,7 +129,6 @@ body::before {
         background: rgba(23, 23, 23, 0.3); }
 
 .servicios {
-  background: url("../../assets/img/background-servicios.jpg");
   height: 100%;
   width: 100%;
   position: relative;
@@ -140,18 +138,14 @@ body::before {
   height: 100%;
   width: 100%;
   position: relative;
-  margin-top: 80px;
-  background-position: center 65%;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-image: linear-gradient(to left top, #a13b24, #a14234, #9f4a42, #9b534f, #965b5b); }
   .servicios::before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%;
-    z-index: -1; }
+    width: 100%; }
 
 section {
   display: flex;
@@ -162,6 +156,7 @@ section {
   section h2 {
     font-size: 2.5rem;
     color: #fff;
+    margin-top: 80px;
     font-weight: 800;
     -webkit-text-stroke-width: 0.0625rem;
     -webkit-text-stroke-color: #333; }
@@ -316,28 +311,20 @@ section {
   border: 2px solid #fe842d; }
 
 .clientes {
-  background: url("../../assets/img/background-clientes.jpg");
   height: 100%;
   width: 100%;
   position: relative;
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  margin-top: 80px;
-  background-position: center 65%;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-image: linear-gradient(to left top, #504027, #625028, #726128, #817328, #8d8727); }
   .clientes::before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%;
-    z-index: -1; }
+    width: 100%; }
 
 .mainContacto {
   height: 100%;
@@ -359,8 +346,7 @@ section {
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%;
-    z-index: -1; }
+    width: 100%; }
 
 .contacto form {
   height: 60px;

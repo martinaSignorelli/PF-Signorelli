@@ -15,13 +15,13 @@ body::before{
 
 // home
 .home {
-    background: url("../../assets/img/background.jpg");
     @include fondo(center 65%, cover, fixed);
     height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: linear-gradient(to left top, #744b4b, #8f5555, #ab5f5f, #c86969, #e57373);
 
     .contenido {
         display: flex;
@@ -58,15 +58,11 @@ body::before{
 
 // servicios
 .servicios {
-    background: url("../../assets/img/background-servicios.jpg");
     @include fondo(center 65%, cover, fixed);
     height: 100%;
     width: 100%;
     position: relative;
-    margin-top: 80px;
-    background-position: center 65%;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: linear-gradient(to left top, #a13b24, #a14234, #9f4a42, #9b534f, #965b5b);
 }
 
 section {
@@ -77,6 +73,7 @@ section {
     h2 {
         font-size: 2.5rem;
         color: $color-texto;
+        margin-top: 80px;
         font-weight: 800;
         -webkit-text-stroke-width: 0.0625rem;
         -webkit-text-stroke-color: #333;
@@ -271,15 +268,8 @@ section {
 
 // comentarios-clientes
 .clientes {
-    background: url("../../assets/img/background-clientes.jpg");
     @include fondo(center 65%, cover, fixed);
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin-top: 80px;
-    background-position: center 65%;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: linear-gradient(to left top, #504027, #625028, #726128, #817328, #8d8727);
 }
 
 // contacto
@@ -287,7 +277,6 @@ section {
 .mainContacto {
     @include fondo(center 65%, cover, fixed);
     background-color: #ffae73; 
-
     display: flex;
     justify-content: center;
     align-items: center;

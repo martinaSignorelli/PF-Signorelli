@@ -55,7 +55,7 @@
     }
 }
 
-@mixin fondo($posicion, $size, $attachment) {
+@mixin fondo($posicion: center, $size: cover, $attachment: fixed) {
     height: 100%;
     width: 100%;
     position: relative;
@@ -70,7 +70,6 @@
         top: 0;
         height: 100%;
         width: 100%;
-        z-index: -1; 
     }
 }
 
