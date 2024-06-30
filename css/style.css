@@ -68,10 +68,10 @@ body::before {
   width: 100%; }
 
 .home {
+  background: url("../../assets/img/background.jpg");
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url("../../assets/img/background.jpg");
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed;
@@ -130,10 +130,10 @@ body::before {
         background: rgba(23, 23, 23, 0.3); }
 
 .servicios {
+  background: url("../../assets/img/background-servicios.jpg");
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url("../../assets/img/background-servicios.jpg");
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed;
@@ -316,10 +316,17 @@ section {
   border: 2px solid #fe842d; }
 
 .clientes {
+  background: url("../../assets/img/background-clientes.jpg");
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url("../../assets/img/background-clientes.jpg");
+  background-position: center 65%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed; }
@@ -336,6 +343,9 @@ section {
   height: 100%;
   width: 100%;
   position: relative;
+  background-position: center 65%;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: #ffae73;
   display: flex;
   justify-content: center;

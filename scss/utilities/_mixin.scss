@@ -55,19 +55,13 @@
     }
 }
 
-@mixin fondo($fondo, $posicion, $size, $attachment) {
+@mixin fondo($posicion, $size, $attachment) {
     height: 100%;
     width: 100%;
     position: relative;
-
-    @if (type-of($fondo) == 'color') {
-        background-color: $fondo;
-    } @else {
-        background-image: url($fondo);
-        background-position: $posicion;
-        background-size: $size;
-        background-attachment: $attachment;
-    }
+    background-position: $posicion;
+    background-size: $size;
+    background-attachment: $attachment;
 
     &::before {
         content: '';
