@@ -75,7 +75,13 @@ body::before {
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh; }
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
+  background-position: center 65%;
+  background-size: cover;
+  background-attachment: fixed; }
   .home::before {
     content: '';
     position: absolute;
@@ -129,7 +135,7 @@ body::before {
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url("../../assets/img/background.jpg");
+  background-image: url("../../assets/img/background-servicios.jpg");
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed;
