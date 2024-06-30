@@ -1,0 +1,47 @@
+.navbar-expand-lg {
+    @include navbar-style;
+
+    &::before { 
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $color-fondo-footer-navbar;
+        backdrop-filter: blur(3.125rem);
+        z-index: $z-index-negative;
+    }
+
+    .navbar-brand { 
+        width: auto;
+
+        img:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    a { 
+        font-weight: $font-weight-navbar;
+        font-size: $font-size-navbar;
+        color: $secondary-color;
+        text-decoration: none;
+        margin-left: $margin-navbar-link;
+        transition: .3s;
+
+        &:hover {
+            color: $color-principal;
+        }
+    }
+}
+
+.dropdown-menu {
+    content: ' ';
+    background: $color-fondo-footer-navbar;
+    backdrop-filter: blur(3.125rem);
+
+    li a:hover {
+        background: $secondary-color;
+        text-align: center;
+    }
+}

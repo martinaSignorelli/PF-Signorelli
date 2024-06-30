@@ -1,0 +1,36 @@
+@media (max-width: 564px) {
+    .contenido {
+        margin-top: 20px;
+    }
+    .contenido h1 {
+        font-size: 1.75rem;
+    }
+    .contenido .texto {
+        font-size: 0.75rem;
+        margin-bottom: 20px;
+    }
+}
+
+
+// footer
+@media (max-width: 574px) {
+    .footer-info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 564px) {
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section .titulo {
+        font-size: 1.25rem;
+    }
+
+    section .tarjetas .tarjeta img {
+        width: 80px;
+        height: 80px;
+    }
+}
+

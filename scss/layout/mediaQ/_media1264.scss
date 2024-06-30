@@ -1,0 +1,26 @@
+@media (max-width: 1264px) {
+    .about {
+        @include grid-areas(
+            "titulo titulo"
+            "lucia-1 lucia-2"
+            "lucia-1 lucia-3"
+            "lucia-1 lucia-4"
+            "lucia-1 lucia-5"
+            "sofia-2 sofia-1"
+            "sofia-3 sofia-1"
+            "sofia-4 sofia-1"
+            "sofia-5 sofia-1"
+        );
+    }
+    .lucia-2, .sofia-2 {
+        font-size: 2rem;
+        justify-self: center;
+        align-self: center;
+        margin-top: 40px;
+    }
+    .lucia-4, .sofia-4,
+    .lucia-5, .sofia-5 {
+        align-self: center;
+    }
+}
+

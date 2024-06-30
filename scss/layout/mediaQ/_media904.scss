@@ -1,0 +1,49 @@
+@media (max-width: 904px) {
+    .contenido {
+        margin-top: 30px;
+    }
+    .contenido h1 {
+        font-size: 2.5rem;
+    }
+    .contenido .texto {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 904px) {
+    section .tarjetas {
+        padding: 0 5px;
+
+        .tarjeta {
+            width: calc(100% / 2 - 20px);
+        }
+    }
+}
+
+@media (max-width: 904px) {
+    .about {
+        @include grid-areas(
+            "titulo titulo"
+            "lucia-1 lucia-2"
+            "lucia-1 lucia-3"
+            "lucia-1 lucia-4"
+            "lucia-1 lucia-5"
+            "sofia-2 sofia-1"
+            "sofia-3 sofia-1"
+            "sofia-4 sofia-1"
+            "sofia-5 sofia-1"
+        );
+    }
+    .lucia-2, .sofia-2 {
+        font-size: 2rem;
+        justify-self: center;
+        align-self: center;
+        margin-top: 40px;
+    }
+    .lucia-4, .sofia-4,
+    .lucia-5, .sofia-5 {
+        align-self: center;
+    }
+}
+

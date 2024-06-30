@@ -1,0 +1,27 @@
+// utilities
+@import 'utilities/variables';
+@import 'utilities/mixin';
+@import 'utilities/funciones';
+@import 'utilities/mapas';
+
+// base
+@import 'base/reset';
+@import 'base/tipografias';
+
+// components
+@import 'components/card';
+@import 'components/bootstrap';
+@import 'components/navbar';
+
+// layout
+@import 'layout/header';
+@import 'layout/main-index';
+@import 'layout/footer';
+@import 'layout/mediaQ/media1264';
+@import 'layout/mediaQ/media904';
+@import 'layout/mediaQ/media805';
+@import 'layout/mediaQ/media768';
+@import 'layout/mediaQ/media564';
+@import 'layout/mediaQ/media480';
+@import 'layout/mediaQ/media390';
+@import 'layout/mediaQ/media340';

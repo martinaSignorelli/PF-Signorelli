@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$tipografia-principal: 'Roboto', sans-serif;
+$titulos: 'Grandstander', cursive;
+
+// z-index valores
+$z-index-navbar: 5;
+$z-index-negative: -1;
+
+// colores
+$color-fondo-footer-navbar: rgba(0, 0, 0, .1);
+$color-fondo-boton: rgba(23, 23, 23, 0.3);
+$shadow: rgba(0, 0, 0, 0.3);
+$color-principal: orangered;
+$secondary-color: black;
+$color-titulos: #fff;
+$color-detalles: #fe842d;
+$footer-border-color: #ff9c3f;
+$color-texto: #fff;
+
+// font sizes
+$font-size-navbar: 1.15rem;
+$font-weight-navbar: 500 ;
+
+// padding
+$padding-navbar: 1rem 5%;
+$margin-navbar-link: 2.5rem;
+
+// variables para redes sociales
+$redes-sociales-bg: rgba(255, 255, 255, 0.2);
+

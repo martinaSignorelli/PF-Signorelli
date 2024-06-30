@@ -1,0 +1,58 @@
+@media (max-width: 480px) {
+    .contenido {
+        margin-top: 20px;
+    }
+    .contenido h1 {
+        font-size: 1rem;
+    }
+    .contenido .texto {
+        font-size: 0.75rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        @include grid-template(1fr);
+        @include grid-areas(
+            "titulo"
+            "lucia-1"
+            "lucia-2"
+            "lucia-3"
+            "lucia-4"
+            "lucia-5"
+            "sofia-1"
+            "sofia-2"
+            "sofia-3"
+            "sofia-4"
+            "sofia-5"
+        );
+        background-size: cover;
+        background-position: center;
+    }
+    .lucia-1, .sofia-1 {
+        width: 80%; 
+        max-width: 200px; 
+        margin-bottom: 20px;
+    }
+    .lucia-2, .sofia-2 {
+        font-size: 1.5rem;
+        justify-self: center;
+        align-self: center;
+    }
+    .lucia-3, .sofia-3 {
+        font-size: 1rem;
+        justify-self: center;
+    }
+    .lucia-4, .sofia-4 {
+        max-width: 100%;
+        margin-bottom: 20px;
+        justify-self: center;
+        text-align: center;
+    }
+    .lucia-5, .sofia-5 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        justify-self: center;
+    }
+}

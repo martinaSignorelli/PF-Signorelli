@@ -1,0 +1,91 @@
+@media (max-width: 768px) {
+    .contenido {
+        margin-top: 20px;
+    }
+    .contenido h1 {
+        font-size: 2rem;
+    }
+    .contenido .texto {
+        font-size: 0.875rem;
+        margin-bottom: 20px;
+    }
+}
+
+// footer
+@media (max-width: 768px) {
+    .footer-info {
+        width: 50%;
+        margin-bottom: 30px;
+        background: $color-fondo-footer-navbar; 
+        backdrop-filter: blur(50px);
+        box-shadow: $color-fondo-footer-navbar;
+    }
+}
+
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section .titulo {
+        font-size: 1.5rem;
+    }
+
+    section .tarjetas {
+        flex-direction: column;
+        align-items: center;
+
+        .tarjeta {
+            width: 80%;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        @include grid-areas(
+            "titulo"
+            "lucia-1"
+            "lucia-1"
+            "lucia-1"
+            "lucia-2"
+            "lucia-3"
+            "lucia-4"
+            "lucia-5"
+            "sofia-1"
+            "sofia-1"
+            "sofia-1"
+            "sofia-2"
+            "sofia-3"
+            "sofia-4"
+            "sofia-5"
+        );
+        gap: 20px;
+    }
+    .about .titulo {
+        font-size: 2.5rem;
+    }
+    .lucia-2, .sofia-2 {
+        align-self: start;
+        justify-self: center;
+        margin-top: 0;
+    }
+    .lucia-3, .sofia-3 {
+        margin-bottom: 30px;
+        justify-self: center;
+    }
+    .lucia-4, .sofia-4 {
+        margin-bottom: 40px;
+        justify-self: center;
+        text-align: center;
+    }
+    .sofia-5 {
+        margin-bottom: 20px;
+        justify-self: center;
+    }
+}
