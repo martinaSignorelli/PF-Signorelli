@@ -75,13 +75,11 @@ body::before {
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  margin-top: 80px;
-  background-position: center 65%;
-  background-size: cover;
-  background-attachment: fixed; }
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
   .home::before {
     content: '';
     position: absolute;
@@ -321,7 +319,7 @@ section {
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url("../assets/img/background-clientes.jpg");
+  background-image: url("../../assets/img/background-clientes.jpg");
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed; }

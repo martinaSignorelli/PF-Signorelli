@@ -15,14 +15,12 @@ body::before{
 
 // home
 .home {
-    @include fondo('../../assets/img/background.jpg', center 65%, cover, fixed);
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin-top: 80px;
-    background-position: center 65%;
-    background-size: cover;
-    background-attachment: fixed;
+    @include fondo("../../assets/img/background.jpg", center 65%, cover, fixed);
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
     .contenido {
         display: flex;
@@ -59,7 +57,7 @@ body::before{
 
 // servicios
 .servicios {
-    @include fondo('../../assets/img/background-servicios.jpg', center 65%, cover, fixed);
+    @include fondo("../../assets/img/background-servicios.jpg", center 65%, cover, fixed);
     height: 100%;
     width: 100%;
     position: relative;
@@ -272,7 +270,7 @@ section {
 // comentarios-clientes
 .clientes {
     @include fondo(
-        "../assets/img/background-clientes.jpg",
+        "../../assets/img/background-clientes.jpg",
         center 65%, 
         cover, 
         fixed 
