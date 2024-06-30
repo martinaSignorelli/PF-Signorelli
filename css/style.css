@@ -82,7 +82,8 @@ body::before {
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    z-index: -1; }
   .home .contenido {
     display: flex;
     height: 85%;
@@ -128,18 +129,25 @@ body::before {
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url("../assets/img/background-servicios.jpg");
+  background-image: url("../../assets/img/background.jpg");
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 80px; }
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
+  background-position: center 65%;
+  background-size: cover;
+  background-attachment: fixed; }
   .servicios::before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    z-index: -1; }
 
 section {
   display: flex;
@@ -317,16 +325,14 @@ section {
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    z-index: -1; }
 
 .mainContacto {
   height: 100%;
   width: 100%;
   position: relative;
   background-color: #ffae73;
-  background-position: center 65%;
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,7 +345,8 @@ section {
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    z-index: -1; }
 
 .contacto form {
   height: 60px;
