@@ -16,7 +16,7 @@ body::before{
 // home
 .home {
     @include fondo(
-        "../assets/img/background.jpg",
+        '../../assets/img/background.jpg',
         center 65%, 
         cover, 
         fixed 
@@ -59,7 +59,7 @@ body::before{
 // servicios
 .servicios {
     @include fondo(
-        "../assets/img/background-servicios.jpg",
+        '../assets/img/background-servicios.jpg',
         center 65%, 
         cover, 
         fixed 
