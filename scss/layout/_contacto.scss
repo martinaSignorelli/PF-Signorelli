@@ -1,0 +1,51 @@
+// contacto
+
+.mainContacto {
+    @include fondo(center 65%, cover, fixed);
+    background-color: #ffae73; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.contacto form {
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.contacto form input {
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid $secondary-color;
+    border-radius: 10px;
+}
+
+.contacto form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1.0625rem;
+    color: $color-texto;
+    border: $secondary-color;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #333;
+    transition: 0.2s ease;
+}
+
+.contacto form button:hover {
+    background: $color-principal;
+    color: $secondary-color;
+    font-weight: 600;
+}
+
+.custom-height-700 {
+    height: 500px;
+}

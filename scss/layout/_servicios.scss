@@ -1,0 +1,60 @@
+// servicios
+.servicios {
+    @include fondo(center 65%, cover, fixed);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url("../assets/img/background-servicios.jpg");
+}
+
+section {
+    @include flex-center();
+    flex-direction: column;
+    padding: 80px 0 0;
+
+    h2 {
+        font-size: 2.5rem;
+        color: $color-texto;
+        margin-top: 80px ;
+        font-weight: 800;
+        -webkit-text-stroke-width: 0.0625rem;
+        -webkit-text-stroke-color: #333;
+    }
+
+    .titulo {
+        color: $color-texto;
+        font-size: 2rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin-top: 50px;
+        padding: 0 10px;
+        justify-content: space-between;
+
+        .tarjeta {
+            background: $color-texto;
+            padding: 40px 15px;
+            list-style: none;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+            margin-bottom: 40px;
+            width: calc(100% / 3 - 30px);
+            text-align: center;
+
+            img {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 20px;
+                border-radius: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

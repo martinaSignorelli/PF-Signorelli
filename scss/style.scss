@@ -11,11 +11,15 @@
 // components
 @import 'components/card';
 @import 'components/bootstrap';
-@import 'components/navbar';
+
 
 // layout
-@import 'layout/header';
+@import 'layout/navbar';
 @import 'layout/main-index';
+@import 'layout/comentarios';
+@import 'layout/acerca-de';
+@import 'layout/contacto';
+@import 'layout/servicios'; 
 @import 'layout/footer';
 @import 'layout/mediaQ/media1264';
 @import 'layout/mediaQ/media904';
