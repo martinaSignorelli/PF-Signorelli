@@ -70,8 +70,13 @@
     .about .titulo {
         font-size: 2.5rem;
     }
-    .lucia-2, .sofia-2 {
+    .lucia-2 {
         align-self: start;
+        justify-self: center;
+        margin-top: 0;
+    }
+    .sofia-2 {
+        align-self: end;
         justify-self: center;
         margin-top: 0;
     }

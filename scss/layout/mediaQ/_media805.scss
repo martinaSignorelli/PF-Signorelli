@@ -1,13 +1,17 @@
 @media (max-width: 805px) {
-    .lucia-2, .sofia-2 {
+    .lucia-2, .lucia-3, .lucia-4 {
         justify-self: start;
     }
-    .lucia-3, .sofia-3 {
-        justify-self: start;
-    }
-    .lucia-4, .sofia-4 {
-        justify-self: start;
+    .lucia-4 {
         text-align: start;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+    .sofia-2, .sofia-3, .sofia-4 {
+        justify-self: end;
+    }
+    .sofia-4 {
+        text-align: end;
         max-width: 300px;
         margin-bottom: 20px;
     }
