@@ -103,6 +103,8 @@ body::before {
       color: #fff; }
     .home .contenido .texto {
       margin-bottom: 50px;
+      background-color: #fe842d;
+      width: 800px;
       font-family: "Roboto", sans-serif;
       color: #fff;
       font-size: 1.25rem;
@@ -172,11 +174,11 @@ body::before {
 
 .lucia-1:hover,
 .sofia-1:hover {
-  transform: scale(1.2); }
+  transform: scale(1.1); }
 
 .lucia-2 {
   grid-area: lucia-2;
-  color: black;
+  color: #fff;
   font-size: 2.5rem;
   justify-self: start;
   align-self: end;
@@ -185,7 +187,7 @@ body::before {
 
 .lucia-3 {
   grid-area: lucia-3;
-  color: black;
+  color: #fff;
   justify-self: center;
   font-size: 1.5rem; }
 
@@ -195,7 +197,8 @@ body::before {
   justify-self: center;
   align-self: start;
   text-align: center;
-  margin-top: -40px; }
+  margin-top: -40px;
+  color: #fff; }
 
 .lucia-5 {
   grid-area: lucia-5;
@@ -220,15 +223,12 @@ body::before {
   width: 60%;
   justify-self: center;
   border-radius: 20%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   transition: 0.4s; }
-
-.sofia-1:hover {
-  transform: scale(1.2); }
 
 .sofia-2 {
   grid-area: sofia-2;
-  color: black;
+  color: #fff;
   font-size: 2.5rem;
   justify-self: end;
   align-self: end;
@@ -237,7 +237,7 @@ body::before {
 
 .sofia-3 {
   grid-area: sofia-3;
-  color: black;
+  color: #fff;
   justify-self: center;
   font-size: 1.5rem; }
 
@@ -246,7 +246,8 @@ body::before {
   max-width: 400px;
   align-self: start;
   justify-self: center;
-  margin-top: -40px; }
+  margin-top: -40px;
+  color: #fff; }
 
 .sofia-5 {
   grid-area: sofia-5;

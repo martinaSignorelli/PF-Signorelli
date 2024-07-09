@@ -40,12 +40,12 @@
 
 .lucia-1:hover,
 .sofia-1:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .lucia-2 {
     grid-area: lucia-2;
-    color: $secondary-color;
+    color: $color-titulos;
     font-size: 2.5rem;
     justify-self: start;
     align-self: end;
@@ -55,7 +55,7 @@
 
 .lucia-3 {
     grid-area: lucia-3;
-    color: $secondary-color;
+    color: $color-titulos;
     justify-self: center;
     font-size: 1.5rem;
 }
@@ -67,6 +67,7 @@
     align-self: start;
     text-align: center;
     margin-top: -40px;
+    color: $color-texto;
 }
 
 .lucia-5 {
@@ -94,17 +95,13 @@
     width: 60%;
     justify-self: center;
     border-radius: 20%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     transition: 0.4s;
-}
-
-.sofia-1:hover {
-    transform: scale(1.2);
 }
 
 .sofia-2 {
     grid-area: sofia-2;
-    color: $secondary-color;
+    color: $color-titulos;
     font-size: 2.5rem;
     justify-self: end;
     align-self: end;
@@ -114,7 +111,7 @@
 
 .sofia-3 {
     grid-area: sofia-3;
-    color: $secondary-color;
+    color: $color-titulos;
     justify-self: center;
     font-size: 1.5rem;
 }
@@ -125,6 +122,7 @@
     align-self: start;
     justify-self: center;
     margin-top: -40px;
+    color: $color-texto;
 }
 
 .sofia-5 {

@@ -42,6 +42,8 @@ body::before{
 
         .texto {
             margin-bottom: 50px;
+            background-color: $color-detalles;
+            width: 800px;
             font-family: $tipografia-principal;
             color: $color-texto;
             font-size: 1.25rem;
