@@ -121,7 +121,7 @@ body::before {
       padding: 10px 30px;
       border-radius: 5px;
       background: #fff;
-      border: 2px solid black;
+      border: 2px solid #fe842d;
       box-shadow: 0 10px 20px rgba(23, 23, 23, 0.3);
       text-decoration: none;
       transition: all 0.3s ease;
@@ -153,15 +153,15 @@ body::before {
   width: 100%;
   background-image: linear-gradient(to left top, #808080, #727272, #646464, #565656, #494949); }
 
-.titulo {
+.titulo0 {
   grid-area: titulo;
   justify-self: center;
   margin-top: 60px;
   margin-bottom: 20px;
-  font-size: 6rem;
+  font-size: 2.5rem;
   color: #fff;
   font-weight: 800;
-  -webkit-text-stroke-width: 0.0625rem;
+  -webkit-text-stroke-width: .0625rem;
   -webkit-text-stroke-color: #333; }
 
 .lucia-1,
@@ -357,7 +357,7 @@ section {
     -webkit-text-stroke-color: #333; }
   section .titulo {
     color: #fff;
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   section p {
     text-align: center; }
   section .tarjetas {
@@ -541,8 +541,8 @@ section {
   .about {
     grid-template-areas: "titulo" "lucia-1" "lucia-1" "lucia-1" "lucia-2" "lucia-3" "lucia-4" "lucia-5" "sofia-1" "sofia-1" "sofia-1" "sofia-2" "sofia-3" "sofia-4" "sofia-5";
     gap: 20px; }
-  .about .titulo {
-    font-size: 2.5rem; }
+  .about .titulo0 {
+    font-size: 2rem; }
   .lucia-2 {
     align-self: start;
     justify-self: center;
