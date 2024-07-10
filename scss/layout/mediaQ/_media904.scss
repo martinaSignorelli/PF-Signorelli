@@ -1,13 +1,15 @@
 @media (max-width: 904px) {
-    .contenido {
+    .home .contenido {
         margin-top: 30px;
     }
-    .contenido h1 {
+    .home .contenido h1 {
         font-size: 2.5rem;
     }
-    .contenido .texto {
+
+    .home .contenido .texto {
+        justify-content: center;
+        width: 700px;
         font-size: 1rem;
-        margin-bottom: 30px;
     }
 }
 

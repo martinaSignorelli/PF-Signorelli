@@ -1,11 +1,12 @@
 @media (max-width: 768px) {
-    .contenido {
+    .home .contenido {
         margin-top: 20px;
     }
-    .contenido h1 {
+    .home .contenido h1 {
         font-size: 2rem;
     }
-    .contenido .texto {
+    .home .contenido .texto {
+        width: 400px;
         font-size: 0.875rem;
         margin-bottom: 20px;
     }
