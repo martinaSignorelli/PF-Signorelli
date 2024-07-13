@@ -79,7 +79,7 @@ body::before {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("../assets/img/background.jpg"); }
+  background-image: url("../assets/img/background.webp"); }
   .home::before {
     content: '';
     position: absolute;
@@ -138,7 +138,7 @@ body::before {
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url("../assets/img/background-clientes.jpg"); }
+  background-image: url("../assets/img/background-clientes.webp"); }
   .clientes::before {
     content: '';
     position: absolute;
@@ -334,7 +334,7 @@ body::before {
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url("../assets/img/background-servicios.jpg"); }
+  background-image: url("../assets/img/background-servicios.webp"); }
   .servicios::before {
     content: '';
     position: absolute;
