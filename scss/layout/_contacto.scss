@@ -1,51 +1,137 @@
 // contacto
 
+// .mainContacto {
+//     @include fondo(center 65%, cover, fixed);
+//     background-color: #ffae73; 
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     height: 100%;
+//     width: 100%;
+//     z-index: 10;
+// }
+
+// .contacto form {
+//     height: 60px;
+//     margin-bottom: 20px;
+//     padding: 10px;
+//     width: 100%;
+//     font-size: 16px;
+// }
+
+// .contacto form input {
+//     height: 45px;
+//     margin-bottom: 20px;
+//     padding: 10px;
+//     font-size: 1rem;
+//     border: 1px solid $secondary-color;
+//     border-radius: 10px;
+// }
+
+// .contacto form button {
+//     margin-top: 10px;
+//     padding: 10px 20px;
+//     font-size: 1.0625rem;
+//     color: $color-texto;
+//     border: $secondary-color;
+//     cursor: pointer;
+//     border-radius: 5px;
+//     background: #333;
+//     transition: 0.2s ease;
+// }
+
+// .contacto form button:hover {
+//     background: $color-principal;
+//     color: $secondary-color;
+//     font-weight: 600;
+// }
+
+// .custom-height-700 {
+//     height: 500px;
+// }
+
 .mainContacto {
     @include fondo(center 65%, cover, fixed);
-    background-color: #ffae73; 
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     height: 100%;
     width: 100%;
-}
+    background-color: #ffae73;
+    padding-top: 2.5rem; 
 
-.contacto form {
-    height: 60px;
-    margin-bottom: 20px;
-    padding: 10px;
-    width: 100%;
-    font-size: 16px;
-}
+    .contacto {
+        text-align: center;
+        height: 60px;
+        padding: .625rem;
+        margin-bottom: 20px;
+        width: 100%;
+        z-index: 100;
 
-.contacto form input {
-    height: 45px;
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid $secondary-color;
-    border-radius: 10px;
-}
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: $secondary-color;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        transition: color 0.3s ease-in-out;
 
-.contacto form button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 1.0625rem;
-    color: $color-texto;
-    border: $secondary-color;
-    cursor: pointer;
-    border-radius: 5px;
-    background: #333;
-    transition: 0.2s ease;
-}
+    &:hover {
+        color: $color-detalles;
+        }
+    }
 
-.contacto form button:hover {
-    background: $color-principal;
-    color: $secondary-color;
-    font-weight: 600;
-}
+    p {
+        font-size: 1.25rem;
+        color: $secondary-color;
+    }
 
-.custom-height-700 {
-    height: 500px;
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60px;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 100%;
+
+    input[type="email"] {
+        width: 100%;
+        padding: .625rem;
+        font-size: 1rem;
+        border: 2px solid $secondary-color;
+        border-radius: .625rem;
+        margin-bottom: 1.25rem;
+        transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        height: 45px;
+
+    &:focus {
+        outline: none;
+        border-color: $color-detalles;
+        box-shadow: 0 0 10px rgba($color-detalles, 0.5);
+        }
+    }
+
+        button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: $color-titulos;
+            background-color: $secondary-color;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $color-detalles;
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
+}
 }

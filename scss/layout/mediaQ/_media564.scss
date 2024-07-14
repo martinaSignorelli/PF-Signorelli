@@ -4,6 +4,36 @@
     }
 }
 
+@media (max-width: 564px) {
+    .mainContacto .contacto {
+        text-align: center;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem; 
+        }
+
+        .form {
+            padding: 5px;
+
+            input[type="email"] {
+                height: 40px; 
+            }
+
+            button {
+                font-size: 1rem;
+                padding: 0.5rem 1rem; 
+            }
+        }
+    }
+}
+
+
+
 // footer
 @media (max-width: 574px) {
     .footer-info {
